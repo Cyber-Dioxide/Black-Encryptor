@@ -203,6 +203,8 @@ while True:
     else:
         print(ran + "\nInvalid option")
         exit()
+        
+    input(ran+"press enter to continue")
 
 
 
