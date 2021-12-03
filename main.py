@@ -29,6 +29,7 @@ while True:
     def banner():
         en = pyfiglet.figlet_format("Black\nEncryptor\n")
         print(ran, en)
+        print(ran+"\n\n\tV_2.1\t\n")
         print("\n\n")
         print(Fore.CYAN, "- " * 4, " [+] Follow me on Instagram @saadkhan041 ", "- " * 4)
         print(Fore.LIGHTYELLOW_EX, "\n", "- " * 4, " [+] Follow me on Instagram @coding_memz ", "- " * 4)
@@ -132,7 +133,7 @@ while True:
         text = text.replace("Ú", "G")
         text = text.replace("Ý", "g")
         text = text.replace("Þ", "H")
-        text = text.replace("h", "Ã")
+        text = text.replace("Ã", "h")
         text = text.replace("Û", "I")
         text = text.replace("š", "i")
         text = text.replace("˜", "J")
