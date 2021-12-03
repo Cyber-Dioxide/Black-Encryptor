@@ -109,8 +109,9 @@ while True:
         text = text.replace("9", "á")
         text = text.replace(" ", "»")
         print(ran + "\n\n\tGetting things ready- - - - - - \t\n\n")
+        print(ran+"Copy below text and send\n:")
 
-        print(text)
+        print(text , "\n")
 
 
     def decrypt():
@@ -181,8 +182,9 @@ while True:
         text = text.replace("»", " ")
 
         print(ran + "\n\n\tGetting things ready- - - - - - \t\n\n")
+        print(ran + "Your decrypted text:\n")
 
-        print(text)
+        print(text,"\n")
 
 
     def exit():
