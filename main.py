@@ -1,3 +1,4 @@
+import os, pyfiglet
 os.system("clear")
 while True:
     import os, pyfiglet
