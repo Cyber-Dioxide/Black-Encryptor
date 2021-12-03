@@ -1,3 +1,4 @@
+os.system("clear")
 while True:
     import os, pyfiglet
     from colorama import Fore
@@ -21,7 +22,7 @@ while True:
     all_col = [red, green, orange, cyan, lightred, lightgreen, yellow, lightcyan]
     ran = random.choice(all_col)
 
-    os.system("clear")
+    
 
 
     def banner():
