@@ -25,7 +25,7 @@ while True:
 
 
     def banner():
-        en = pyfiglet.figlet_format("Black\nEncryptor\n&\nDecryptor\n")
+        en = pyfiglet.figlet_format("Black\nEncryptor\n")
         print(ran, en)
         print("\n\n")
         print(Fore.CYAN, "- " * 4, " [+] Follow me on Instagram @saadkhan041 ", "- " * 4)
