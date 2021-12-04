@@ -207,3 +207,11 @@ while cont != "n" and "no":
         exit()
     cont = input(ran + "\nDo you want to continue? [y/n]:")
 
+    if cont == "y":
+        os.system("clear")
+        banner()
+    else:
+        pass
+
+
+
