@@ -1,50 +1,46 @@
 import os, pyfiglet
-os.system("clear")
-while True:
-    import os, pyfiglet
-    from colorama import Fore
-    import random
+import sys
 
-    black = '\033[30m'
-    red = '\033[31m'
-    green = '\033[32m'
-    orange = '\033[33m'
-    blue = '\033[34m'
-    purple = '\033[35m'
-    cyan = '\033[36m'
-    lightgrey = '\033[37m'
-    darkgrey = '\033[90m'
-    lightred = '\033[91m'
-    lightgreen = '\033[92m'
-    yellow = '\033[93m'
-    lightblue = '\033[94m'
-    pink = '\033[95m'
-    lightcyan = '\033[96m'
-    all_col = [red, green, orange, cyan, lightred, lightgreen, yellow, lightcyan]
-    ran = random.choice(all_col)
+from colorama import Fore
+import random
 
-    
+black = '\033[30m'
+red = '\033[31m'
+green = '\033[32m'
+orange = '\033[33m'
+blue = '\033[34m'
+purple = '\033[35m'
+cyan = '\033[36m'
+lightgrey = '\033[37m'
+darkgrey = '\033[90m'
+lightred = '\033[91m'
+lightgreen = '\033[92m'
+yellow = '\033[93m'
+lightblue = '\033[94m'
+pink = '\033[95m'
+lightcyan = '\033[96m'
+all_col = [red, green, orange, cyan, lightred, lightgreen, yellow, lightcyan,lightblue,pink]
+ran = random.choice(all_col)
 
 
-    def banner():
+def banner():
+        os.system("clear")
         en = pyfiglet.figlet_format("Black\nEncryptor\n")
         print(ran, en)
-        print(ran+"\n\n\tV_2.1\t\n")
+        print(ran + "\n\n\tV_3.0\t\n")
         print("\n\n")
         print(Fore.CYAN, "- " * 4, " [+] Follow me on Instagram @saadkhan041 ", "- " * 4)
         print(Fore.LIGHTYELLOW_EX, "\n", "- " * 4, " [+] Follow me on Instagram @coding_memz ", "- " * 4)
         print(Fore.LIGHTRED_EX, "\n", "- " * 4, "[+] Github: https://github.com/Saadkhan041/ ", "- " * 3)
 
 
-    banner()
-
-    print(ran + "[1] Encrypt Text\n[2] Decrypt Text\n[3]Exit ")
-
-    choice = input(ran + "Enter your choice: ")
+banner()
 
 
-    def encrypt():
-        text = input(ran + "Enter the text to Encrypt: ")
+
+
+def encrypt():
+        text = input(ran + "\nEnter the text to Encrypt: ")
 
         text = text.replace("A", "Ç")
         text = text.replace("a", "ü")
@@ -110,13 +106,12 @@ while True:
         text = text.replace("9", "á")
         text = text.replace(" ", "»")
         print(ran + "\n\n\tGetting things ready- - - - - - \t\n\n")
-        print(ran+"Copy below text and send:\n")
+        print(ran + "Copy below text and send:\n")
 
-        print(text , "\n")
+        print(cyan +text, "\n")
 
-
-    def decrypt():
-        text = input(ran + "Enter the text to Decrypt: ")
+def decrypt():
+        text = input(ran + "\nEnter the text to Decrypt: ")
 
         text = text.replace("Ç", "A")
         text = text.replace("ü", "a")
@@ -185,13 +180,17 @@ while True:
         print(ran + "\n\n\tGetting things ready- - - - - - \t\n\n")
         print(ran + "Your decrypted text:\n")
 
-        print(text,"\n")
+        print(cyan + text, "\n")
 
 
-    def exit():
-        os.system("exit")
+def exit():
+        sys.exit()
 
+cont =" "
+while cont != "n" and "no":
+    print(ran + "\n\t[1] Encrypt Text\n\t[2] Decrypt Text\n\t[3] Exit\n ")
 
+    choice = input(ran + "Enter your choice: ")
     if choice == "1":
         encrypt()
     elif choice == "2":
@@ -206,16 +205,5 @@ while True:
     else:
         print(ran + "\nInvalid option")
         exit()
-        
-    input(ran+"press enter to continue")
-
-
-
-
-
-
-
-
-
-
+    cont = input(ran + "\nDo you want to continue? [y/n]:")
 
