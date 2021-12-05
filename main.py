@@ -188,7 +188,7 @@ def exit():
 
 cont =" "
 while cont != "n" and "no":
-    print(ran + "\n\t[1] Encrypt Text\n\t[2] Decrypt Text\n\t[3] Exit\n ")
+    print(ran + "\n\t\t[1] Encrypt Text\n\t\t[2] Decrypt Text\n\t\t[3] Exit\n ")
 
     choice = input(ran + "Enter your choice: ")
     if choice == "1":
